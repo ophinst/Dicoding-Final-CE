@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Dicoding</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://storage.googleapis.com/bucket-3226ecdc/asset/icon.jpeg">
+  <script src="https://kit.fontawesome.com/0b4f655304.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- header -->
+  <header>
+    <a href="#home"><h1>Maul's Webpage</h1></a>
+    <nav class="navbar" id="navbar">
+      <a href="#about"><i class="fa fa-user" aria-hidden="true"></i>&ensp;About Me</a>
+      <a href="#" id="contactBtn"><i class="fa fa-address-book-o" aria-hidden="true"></i>&ensp;Contacts</a>
+      <a href="#portofolio"><i class="fa fa-tasks" aria-hidden="true"></i>&ensp;Portofolio</a>
+    </nav>
+    <a href="javascript:void(0);" style="font-size: 15px" class="icon" onclick="navFunction()">&#9776;</a>
+  </header>
+<!-- end of header -->
+
+<!-- main content -->
+  <main>
+    <div class="container-home" id="home">
+      <div class="home-intro">
+        <h1>Hello, I am Maulana!</h1>
+        <p>Welcome to my personal website!</p>
+      </div>
+    </div>
+    
+    <div class="container-about" id="about">
+      <div class="about-img">
+        <img src="https://storage.googleapis.com/bucket-3226ecdc/asset/profileImage.JPG">
+      </div>
+      <aside class="about-desc">
+        <div class="desc-card">
+          <h1>Get to Know Me!</h1>
+          <h2>Maulana Luthfi Nasution</h2>
+          <h2>Informatics Student | Junior Developer | Photographer</h2>
+          <br>
+          <hr>
+          <br>
+          <article>An undergraduate Information Technology major student currently enrolled at President University with good adaptability skills and big curiosity especially in multimedia field. As an IT student, I am more than welcome to meet new people and new experience to develop myself more. With my good problem-solving skill, I also able to solve any obstacle and problem that I met in college and professional field.</article>
+          <div class="desc-button">
+            <a href="https://drive.google.com/file/d/1JkxW6QuB9hJM3kDR_jOeIpyWtGvJOiFW/view?usp=share_link" target="_blank">Check out my CV!</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <div class="title" id="portofolio">
+      <h1>What I Do</h1>
+      <hr>
+    </div>
+    <div class="container-gallery">
+      <div class="sub-container-gallery">
+        <div class="gallery-desc">
+          <a href="https://github.com/ophinst/ophinst/blob/main/library.cpp" target="_blank">
+            <img src="https://storage.googleapis.com/bucket-3226ecdc/asset/libproj.png">
+          </a>
+          <h2>Library Program</h2>
+          <p>This program created and modified by me using C++ programming language. It allow the user to borrow and return book just like visiting a real library. It also has a member register and login feature within it. Click on the image to see the script.</p>
+        </div>
+      </div>
+      <div class="sub-container-gallery">
+        <div class="gallery-desc">
+          <a href="https://github.com/ophinst/ophinst/blob/main/Mini%20Market.cpp" target="_blank">
+            <img src="https://storage.googleapis.com/bucket-3226ecdc/asset/marproj.png">
+          </a>
+          <h2>Mini Market Program</h2>
+          <p>This program created and modified by me using C++ programming language. I choose K-Pop goods as the theme of this program. It has many choices of products. Click on image to see the script.</p>
+        </div>
+      </div>
+      <div class="sub-container-gallery">
+        <div class="gallery-desc">
+          <a href="https://drive.google.com/file/d/1jPwGOx4XICjGdYfIfLGc7Ek1GKCyAPUu/view?usp=share_link" target="_blank">
+            <img src="https://storage.googleapis.com/bucket-3226ecdc/asset/photoproj.jpg">
+          </a>
+          <h2>Photography</h2>
+          <p>I am experienced in doing photography and videography by taking part as documentation member in many kind of events. Click the photo to see my photography portofolio.</p>
+        </div>
+      </div>
+      <div class="sub-container-gallery">
+        <div class="gallery-desc">
+          <a href="https://www.youtube.com/watch?v=ofcS05gBwiY" target="_blank">
+            <img src="https://storage.googleapis.com/bucket-3226ecdc/asset/streamproj.png">
+          </a>
+          <h2>Broadcast & Live Stream</h2>
+          <p>I am experienced in event broadcast and live stream by taking part as broadcast member in many kind of events. Click the photo to see my recent work on event broadcast.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal -->
+    <div id="contactModal" class="modal">
+      <div class="sub-container">
+        <span class="close">&times;</span>
+        <h1>You can reach me at:</h1>         
+        <div class="contact-info">
+          <a href="mailto:ophinst7004@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>&ensp;ophinst7004@gmail.com&ensp;<i class="fa fa-envelope-o" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="contact-info">
+          <a href="https://www.instagram.com/maulanalnst/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>&ensp;@maulanalnst&ensp;<i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+        <div class="contact-info">
+          <a href="https://wa.link/c4lanl" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i>&ensp;+62-853-7226-7040&ensp;<i class="fa fa-whatsapp" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="contact-info">
+          <a href="https://github.com/ophinst" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>&ensp;ophinst&ensp;<i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="contact-info">
+          <a href="https://www.linkedin.com/in/maulana-luthfi-nasution-a38232226/" target="_blank"><i class="fa-brands fa-linkedin"></i>&ensp;Maulana Luthfi Nasution&ensp;<i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- foooter -->
+  <footer>
+    <p>Build with &hearts; by Maul | &copy;Copyright 2023</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

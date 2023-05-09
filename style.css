@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgb(47, 146, 240);
+    color: white;
+    z-index: 1;
+}
+
+
+header h1{
+    font-family: 'Dancing Script', cursive;
+}
+
+header a{
+    color: white;
+}
+
+
+.navbar a {
+    margin-right: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+.navbar a:hover{
+    background-color: rgb(49, 102, 138);
+}
+
+header a.icon {
+    display: none;
+    text-align: center;
+    font-size: 40px;
+}
+
+header a.icon:hover{
+    background-color: rgb(49, 102, 138);
+}
+
+/* container */
+.container-home{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: rgb(47, 146, 240);
+    margin-top: 50px;
+    height: 800px;
+}
+
+.container-about{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+}
+
+.container-gallery{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(47, 146, 240);
+    width: 100%;
+    padding: 20px;
+}
+
+/* ----- */
+
+/* home */
+.home-intro{
+    align-self: center;
+}
+
+.home-intro h1{
+    font-size: 70px;
+    border-bottom: 5px solid lightskyblue;
+    font-weight: 600;
+}
+
+.home-intro p{
+    font-size: 30px;
+    margin-top: 25px;
+    text-align: center;
+}
+/* ----- */
+
+/* about me */
+.about-img{
+    flex:50%;
+}
+
+.about-img img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: 0px -15px;
+    margin-bottom: -5px;
+}
+
+.about-desc{
+    color: white;
+    flex: 50%;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.about-desc hr{
+    height: 5px;
+    background-color: lightskyblue;
+    border: 0; 
+}
+
+.about-desc h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-desc h2{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.about-desc article{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.about-desc a{
+    color: rgb(47, 146, 240);
+    font-size: 20px;
+}
+
+
+.desc-card{
+    text-align: center;
+    width: 700px;
+    height: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    /* margin: auto; */
+    background-color: rgb(47, 146, 240);
+    box-shadow: 6px 6px 2px 0px grey;
+}
+
+.desc-button{
+    text-align: center;
+    width: 200px;
+    border-radius: 30px;
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+}
+
+.desc-button:hover{
+    text-align: center;
+    width: 200px;
+    border-radius: 30px;
+    padding: 10px;
+    margin: auto;
+    background-color: rgb(174, 174, 174);
+}
+/* ----- */
+
+
+/* portofolio */
+.title{
+    width: 100%;
+    background-color: rgb(47, 146, 240);
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.title h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.title hr{
+    margin: auto;
+    width: 20%;
+    height: 5px;
+    background-color: lightskyblue;
+    border: 0; 
+}
+
+.gallery-desc {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.gallery-desc h2{
+    font-size: 35px;
+}
+
+.sub-container-gallery{
+    flex: 0 0 50%;
+}
+
+.sub-container-gallery img{
+    width: 100%;
+    height: 400px;
+    padding-left: 5px;
+    padding-right: 5px;
+    object-fit: cover;
+}
+
+/* ----- */
+
+/* modal */
+
+.sub-container{
+    display: block;
+    color: white;
+    align-items: center;
+    border-radius: 20px;
+    width: 50%;
+    height: auto;
+    padding: 25px;
+    margin: auto;
+    background-color: rgb(47, 146, 240);
+}
+
+.sub-container h1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-top: 100px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.contact-info a{
+    color: white;
+}
+
+.contact-info a:hover{
+    background-color: rgb(49, 102, 138);
+    border-radius: 5px;
+}
+.contact-info a :last-child{
+    padding-bottom: 0;
+}
+  
+
+
+.close {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* ----- */
+
+/* footer */
+footer {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* ----- */
+
+/* media-query */
+@media screen and (max-width:900px) {
+    header a.icon {
+        flex: 10%;
+        display: block;
+        color: white;
+        font-size: 30px !important;
+    }
+    
+    .navbar {
+        display: none;
+    }
+
+    header a:first-child {
+        flex: 90%;
+    }
+    
+    header {
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .navbar.responsive {
+        display: block;
+        position: relative;
+        order: 3;
+        flex: 100%;
+    }
+    
+    .navbar.responsive a {
+        display: block;
+        margin: 14px 0;
+    }
+    
+    .home-intro {
+        text-align: center;
+    }
+
+    .home-intro h1 {
+        font-size: 60px;
+        border-bottom: 2px solid lightskyblue;
+    }
+
+    .container-about {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .about-desc {
+        margin: 10px;
+    }
+
+    .desc-card{
+        width: auto;
+        text-align: center;
+        border-radius: 10px;
+        padding: 30px;
+        background-color: rgb(47, 146, 240);
+        box-shadow: 6px 6px 2px 0px grey;
+    }
+
+    .sub-container-gallery img{
+        width: 100%;
+        height: 200px;
+        padding-left: 5px;
+        padding-right: 5px;
+        object-fit: cover;
+    }
+
+    .sub-container-gallery{
+        flex: 0 0 100%;
+    }
+
+    .sub-container{
+        width: 300px;
+    }
+}
